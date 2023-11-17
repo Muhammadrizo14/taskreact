@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {Link} from "react-router-dom";
+import React, {useEffect, useState} from "react";
+
 
 function App() {
+
+  const data = eval(window.localStorage.getItem('data'))
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Link to={'/settings'}>go to settings</Link>
+      <h1>Home</h1>
+
+
+      <div className="product__list">
+        {data.map(res => (
+          <div key={res.id} className='product'>
+            <h1>{res.title}</h1>
+            <p>Price: {res.price}</p>
+          </div>
+        ))}
+      </div>
+
     </div>
   );
 }

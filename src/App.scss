@@ -1,0 +1,15 @@
+.product__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+  gap: 30px;
+  .product {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px grey;
+  }
+}
