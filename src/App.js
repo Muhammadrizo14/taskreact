@@ -9,6 +9,10 @@ function App() {
   return (
     <div className="App">
       <Link to={'/settings'}>go to settings</Link>
+
+      <br/>
+      <br/>
+      <Link to={'/country'}>go to country</Link>
       <h1>Home</h1>
 
       <div className="product__list">

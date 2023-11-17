@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 30px;
   gap: 30px;
+
   .product {
     height: 100px;
     display: flex;
@@ -11,5 +12,22 @@
     text-align: center;
     cursor: pointer;
     box-shadow: 10px 10px 10px grey;
+  }
+}
+
+
+.people {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  .person {
+    box-shadow: 10px 10px 10px lightgrey;
+    padding: 0 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #333;
   }
 }

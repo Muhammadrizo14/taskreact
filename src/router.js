@@ -3,6 +3,8 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import Settings from "./page/settings";
+import Countries from "./page/countries";
+import Country from "./page/country";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +14,14 @@ const router = createBrowserRouter([
   {
     path: "/settings",
     element: <Settings />,
+  },
+  {
+    path: "/country",
+    element: <Countries />,
+  },
+  {
+    path: "/country/:id",
+    element: <Country />,
   },
 ]);
 
