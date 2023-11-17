@@ -44,10 +44,13 @@ const Country = () => {
       <br/>
       <br/>
 
+
+      <h1>{country.city}</h1>
+
       <div>
-        <h1>sort</h1>
-        <input type="number" value={burn} placeholder='burn' onChange={(e)=> setBurn(e.target.value)}/>
-        <input type="number" value={death} placeholder='death' onChange={(e)=> setDeath(e.target.value)}/>
+        <h1>Sort by period</h1>
+        <input type="number" value={burn} placeholder='start year' onChange={(e)=> setBurn(e.target.value)}/>
+        <input type="number" value={death} placeholder='end year' onChange={(e)=> setDeath(e.target.value)}/>
         <button onClick={()=> findPeopleByPeriod()}>get</button>
       </div>
 
