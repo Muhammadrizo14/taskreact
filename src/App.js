@@ -1,17 +1,15 @@
 import './App.scss';
 import {Link} from "react-router-dom";
-import React, {useEffect, useState} from "react";
+import React from "react";
 
 
 function App() {
-
-  const data = eval(window.localStorage.getItem('data'))
+  const data = JSON.parse(window.localStorage.getItem('data'))
 
   return (
     <div className="App">
       <Link to={'/settings'}>go to settings</Link>
       <h1>Home</h1>
-
 
       <div className="product__list">
         {data.map(res => (
